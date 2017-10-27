@@ -83,7 +83,9 @@ class GeneralConversionInfo():
                 ('miles', 'meters', 5.00, 8046.72),
                 ('meters', 'miles', 5000.00, 3.11),
                 ('yards', 'miles',  8800.00, 5.00),
-                ('yards', 'meters', 450.00, 411.48)
+                ('yards', 'meters', 450.00, 411.48),
+                ('yards', 'yards', 10, 10),
+                ('celsius', 'celsius', 100, 100)
                 )
 
 #Class calls on the test cases to validate refactored code.
