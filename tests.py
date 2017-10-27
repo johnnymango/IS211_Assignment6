@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Unit Tests for the Conversions file"""
+"""Assignment 6 - Unit Tests for the Conversions file"""
 
 import unittest
 import conversions
+import conversions_refactored
 
 
 #Class creates a conversion table that is called by all of the test cases to check the conversion.
@@ -65,6 +66,34 @@ class testTemperatureCases(unittest.TestCase):
             print 'Validating {} degrees Kelvin converts to {} degrees Fahrenheit'.format(kelvin, fahrenheit)
             result = conversions.convertKelvintoFahrenheit(kelvin)
             self.assertEqual(fahrenheit, round(result, 2))
+
+
+#Class creates testcases for all conversion types for the refactored code
+class GeneralConversionInfo():
+
+    testcases = (
+                ("CElsius", "KELVIN", 410.00, 683.150),
+                ("kelvin", "Celsius", 573.15, 300.00),
+                ("kelvin", "Celsius", 683.15, 410.00),
+                ("Kelvin", "celsius", 393.15, 120.00),
+                ("fahrenheit", "kelvin", 572.00, 573.15),
+                ("Fahrenheit", "Kelvin", 770.00, 683.15),
+                ('miles', 'yards', 1.00, 1760.00),
+                ('meters', 'yards', 50.00, 54.68),
+                ('miles', 'meters', 5.00, 8046.72),
+                ('meters', 'miles', 5000.00, 3.11),
+                ('yards', 'miles',  8800.00, 5.00),
+                ('yards', 'meters', 450.00, 411.48)
+                )
+
+#Class calls on the test cases to validate refactored code.
+class refactoredTestCases(unittest.TestCase):
+
+    def testRefactoredTempCases(self):
+        for fromUnit, toUnit, value, conversion in GeneralConversionInfo.testcases:
+            result = conversions_refactored.conversioncalcs(fromUnit, toUnit, value)
+            self.assertEqual(conversion, round(result, 2))
+
 
 if __name__ == '__main__':
     unittest.main()
