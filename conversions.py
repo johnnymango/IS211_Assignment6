@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Assignment 6 - Temperature Conversion Code"""
+"""Assignment 6 - Temperature Conversion Code."""
 
 
 #Function converts C to K

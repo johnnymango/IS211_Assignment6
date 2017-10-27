@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Assignment 6 - Unit Tests for the Conversions file"""
+"""Assignment 6 - Unit Tests for the Conversions file."""
 
 import unittest
 import conversions

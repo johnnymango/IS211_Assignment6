@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Assignment 6 - Refactored Conversion Code"""
+"""Assignment 6 - Refactored Conversion Code."""
 
 class ConversionNotPossible():
     pass
