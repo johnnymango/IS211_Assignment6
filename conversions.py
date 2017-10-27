@@ -11,22 +11,27 @@ def convertCelsiusToKelvin(celsius):
 
 #Function converts C to F
 def convertCelsiusToFahrenheit(celsius):
-     pass
+     fahrenheit = (celsius * 9) / 5 + 32
+     return float(fahrenheit)
 
 #Function converts F to C
 def convertFahrenheitToCelsius(fahrenheit):
-     pass
+     celsius = ((fahrenheit - 32) * 5) / 9
+     return float(celsius)
 
 #Function converts F to K
 def convertFahrenheitToKelvin(fahrenheit):
-     pass
+     kelvin = (fahrenheit + 459.67) * 5/9
+     return float(kelvin)
 
 #Function converts K to C
 def convertKelvinToCelsius(kelvin):
-     pass
+     celsius = kelvin - 273.15
+     return float(celsius)
 
-#Function convers K to K
+#Function converts K to F
 def convertKelvintoFahrenheit(kelvin):
-     pass
+     fahrenheit = (kelvin * 9/5) - 459.67
+     return float(fahrenheit)
 
 
